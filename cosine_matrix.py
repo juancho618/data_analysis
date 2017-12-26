@@ -23,7 +23,6 @@ for i, document in  enumerate(documents):
 n = 2
 epsilon = 0.5
 
-# print(matrix[1][0][0])
 #first part 
 def selectRandom(k, list):
     random_select = []
@@ -52,7 +51,12 @@ def regionScan(current_node, epsilon, matrix):
 def expandCluster(node, neighbour_nodes, clusters, c_n,eps, MinPts, matris, visited):
     clusters[c_n].append(node)
     for n_node in neighbour_nodes:
-        if n_node not in visited:
+        if n_node[1] not in visited:
+            neighbour_node_2 = regionScan(n_node, epsilon, matrix)
+            if len(neighbour_node_2) >= MinPts:
+                neighbour_nodes += neighbour_node_2
+        if n_node[1] not in (i for i in clusters):
+            clusters[c_n].append(n_node[1])
 
 
 def DBSCAN(matrix, epsilon, min_nodes):
@@ -68,8 +72,9 @@ def DBSCAN(matrix, epsilon, min_nodes):
         else:
             clusters.append([])
             c_n += 1
-
+    print("no. of clusters: " , len(clusters))
+    print("length of noise:", len(noise))
             
 
-regionScan(matrix[0], 0.5, matrix)
+DBSCAN(matrix, 0.5, 4)
 
