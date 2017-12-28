@@ -23,3 +23,4 @@ class CSVHelper(object):
         for row in reader:
             rows.append(', '.join(row))
         return rows
+

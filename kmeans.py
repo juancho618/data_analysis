@@ -2,6 +2,9 @@
 # n_clusters: number of clusters
 # output 1: labels of X with size (n_samples,)
 # output 2: centroids of clusters
+from euclidean_distance import euclidean_vectorized
+import numpy as np
+
 def kmeans(X,n_clusters):
     # initialize labels and prev_labels. prev_labels will be compared with labels to check if the stopping condition
     # have been reached.

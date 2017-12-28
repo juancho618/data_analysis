@@ -2,6 +2,7 @@ from csv_helper import CSVHelper
 import re
 import nltk
 import numpy
+nltk.download()
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
 from nltk.corpus import stopwords
@@ -27,8 +28,8 @@ for t in tweets:
                 clean_fragments.append(f)
     clean_tweets.append(" ".join(clean_fragments))
 
-    
-        
+
+
 
 num = 68
 tweet = tweets[num]
@@ -36,7 +37,7 @@ c_tweet =  clean_tweets[num]
 clean_array =  numpy.asarray(clean_tweets)
 
 # Export to csv
-import pandas as pd 
+import pandas as pd
 df = pd.DataFrame(clean_array)
 df.to_csv("file_path.csv")
 

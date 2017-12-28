@@ -77,4 +77,3 @@ def DBSCAN(matrix, epsilon, min_nodes):
             
 
 DBSCAN(matrix, 0.5, 4)
-
