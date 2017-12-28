@@ -1,6 +1,6 @@
 import re
 import csv
-text = u'This dog \U0001f602 🍡🙇💮'
+text = u'This dog \U0001f602 🍡🍡🙇💮'
 print(text) # with emoji
 
 emoji_pattern = re.compile("["
