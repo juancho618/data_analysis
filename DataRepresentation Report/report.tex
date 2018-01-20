@@ -1,0 +1,136 @@
+\documentclass{article}
+    \usepackage{amssymb}
+    \usepackage{color}
+    \usepackage{listings}
+    \usepackage{graphicx}
+    \usepackage{subcaption}
+    \usepackage{geometry}
+    \usepackage{float}
+    \usepackage{caption}
+    \usepackage{blindtext}
+    \geometry{
+    a4paper,
+    total={170mm,257mm},
+    left=20mm,
+    top=20mm,
+    }
+    \DeclareCaptionFormat{citation}{%
+    \ifx\captioncitation\relax\relax\else
+      \captioncitation\par
+    \fi
+    #1#2#3\par}
+ \newcommand*\setcaptioncitation[1]{\def\captioncitation{\textit{Source:}~#1}}
+ \let\captioncitation\relax
+ \captionsetup{format=citation,justification=centering}
+
+    \setlength{\parindent}{0em}
+    \setlength{\parskip}{1em} % length of the spacing
+    
+    \definecolor{gray}{rgb}{0.4,0.4,0.4}
+    \definecolor{darkblue}{rgb}{0.0,0.0,0.6}
+    \definecolor{cyan}{rgb}{0.0,0.6,0.6}
+    
+    \lstset{
+      basicstyle=\ttfamily,
+      columns=fullflexible,
+      showstringspaces=false,
+      commentstyle=\color{gray}\upshape
+    }
+    
+    \lstdefinelanguage{XML}
+    {
+      morestring=[b]",
+      morestring=[s]{>}{<},
+      morecomment=[s]{<?}{?>},
+      stringstyle=\color{black},
+      identifierstyle=\color{darkblue},
+      keywordstyle=\color{cyan},
+      morekeywords={xmlns,version,type}% list your attributes here
+    }
+    \lstset{ % General setup for the package
+        language=Python,
+        basicstyle=\small\sffamily,
+        numbers=left,
+        numberstyle=\tiny,
+        frame=tb,
+        tabsize=4,
+        columns=fixed,
+        showstringspaces=false,
+        showtabs=false,
+        keepspaces,
+        commentstyle=\color{red},
+        keywordstyle=\color{blue},
+        emphstyle=\ttb\color{deepred},    
+        stringstyle=\color{blue}
+    }
+
+    
+    \begin{document}
+
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{1cm}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.5\linewidth]{./img/vub.png}
+            \end{figure}
+            \Huge
+            \textbf{Data Representation,Reduction and Analysis}
+            
+           
+            
+            \vspace{1.5cm}
+
+            \textbf {\centering Juan Jose Soriano Escobar}
+            \vspace{0.5cm}
+            \newline
+            \textbf{\centering Redona Brahimetaj}
+            \vspace{0.5cm}
+            \vfill
+            
+            
+            \Large
+            Master in Applied Computer Science and Engineering\\
+            Vrije Universiteit Brussels\\
+            Brussels Belgium\\
+            January 15, 2017
+            
+        \end{center}
+    \end{titlepage}
+
+    \newpage
+
+    \begin{appendix}
+        \listoffigures
+      \end{appendix}
+      \newpage
+
+
+        \section{Introduction}
+   
+         
+        \newpage         
+        \section{ Cleaning of Tweets }
+One of the most crucial parts to start with and that has a big influence in the result of our project, is data processing step. A csv file containing 2000 tweets was provided.It was required to preprocess the data to make them good enough for the 'learning' step. 
+        
+        \subsection{Pre-Processing}
+        
+        
+        \section{Noise Removal}
+
+
+        \section{Clustering}
+
+
+        \section{Visualization}
+
+    
+        \section{Conclusion}
+
+
+
+      
+    \bibliography{report}
+    \bibliographystyle{ieeetr}
+    \nocite{*}
+\end{document}
