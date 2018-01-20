@@ -5,20 +5,20 @@ from sklearn.metrics.pairwise import cosine_similarity
 from csv_helper import CSVHelper
 import random
 
+def createMatrix():
+    tweets = CSVHelper.load_csv("clean_tweets.csv")
+    tweetOrdered = list(map(lambda x: x.split(','), tweets))
+    documents = list(map(lambda x: x[1].strip(), tweetOrdered)) #getting just the tweet
+    matrix = []
 
-tweets = CSVHelper.load_csv("clean_tweets.csv")
-tweetOrdered = list(map(lambda x: x.split(','), tweets))
-documents = list(map(lambda x: x[1].strip(), tweetOrdered)) #getting just the tweet
+    # TF_IDF Matrix creation
+    tfidf_vectorizer = TfidfVectorizer()
+    tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
+    for i, document in  enumerate(documents):
+        similarity = cosine_similarity(tfidf_matrix[i:i+1], tfidf_matrix)
+        matrix.append((similarity.tolist(), i))
+    return(matrix)
 
-
-# TF_IDF Matrix creation
-tfidf_vectorizer = TfidfVectorizer()
-tfidf_matrix = tfidf_vectorizer.fit_transform(documents)
-matrix = []
-
-for i, document in  enumerate(documents):
-    similarity = cosine_similarity(tfidf_matrix[i:i+1], tfidf_matrix)
-    matrix.append((similarity.tolist(), i))
 
 def regionScan(current_node, epsilon, matrix):
     neighbourPts = []
@@ -53,7 +53,6 @@ def DBSCAN(matrix, epsilon, min_nodes):
             visited.append(node[1])
             neighbour_nodes = regionScan(node[1], epsilon, matrix)
             if len(neighbour_nodes) < min_nodes:
-                print('adding noise')
                 noise.append(node[1])
             else:
                 clusters.append([])
@@ -61,10 +60,11 @@ def DBSCAN(matrix, epsilon, min_nodes):
                 expandCluster(node, neighbour_nodes, clusters, c_n,epsilon, min_nodes, matrix, visited)
     print("no. of clusters: " , len(clusters))
     print("length of noise:", len(noise))
-    print("clusters " , clusters)
-    print("noise " , noise)
+    #print("clusters " , clusters)
+    # print("noise " , noise)
+    return({'clusters': len(clusters), 'noise': len(noise)})
             
-
-DBSCAN(matrix, 0.5, 30)
+# matrix = createMatrix()
+# DBSCAN(matrix, 0.4, 5)
 
 
