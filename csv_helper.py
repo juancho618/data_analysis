@@ -19,7 +19,6 @@ class CSVHelper(object):
     def load_csv(path):
         rows = []
         reader = csv.reader(open(path, encoding='mac_roman')) # mac roman encoding
-        print('starting for loop!')
         for row in reader:
             rows.append(', '.join(row))
         return rows

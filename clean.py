@@ -38,7 +38,7 @@ for t in tweets:
                 clean_fragments.append(f)
     clean_tweets.append(" ".join(clean_fragments))
 
-num = 68
+num = 326
 tweet = tweets[num]
 c_tweet =  clean_tweets[num]
 clean_array =  numpy.asarray(clean_tweets)
