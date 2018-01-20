@@ -10,7 +10,7 @@ tknz = TweetTokenizer()
 tweets = CSVHelper.load_csv("Tweets_2016London.csv")
 clean_tweets = []
 url_expression = 'http[s]?[:]?//(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-emoji_pattern = "["
+emoji_pattern = re.compile("["
         u"\U0001F600-\U0001F64F"  # emoticons
         u"\U0001F300-\U0001F5FF"  # symbols & pictographs
         u"\U0001F680-\U0001F6FF"  # transport & map symbols
@@ -18,8 +18,7 @@ emoji_pattern = "["
         u"\U00002600-\U000027BF"
         u"\U0001f300-\U0001f64F"
         u"\U0001f680-\U0001f6FF"
-        u"\u2600-\u27BF"
-                            "]+"
+        u"\u2600-\u27BF""]+", flags=re.UNICODE)
 wordnet_lemmatizer = WordNetLemmatizer()
 for t in tweets:
     stop = set(stopwords.words('english')) #stop words!
@@ -27,7 +26,7 @@ for t in tweets:
     clean_fragments = []
     for f in framents:
         if f not in stop: # not included in the stop words
-            f = f.lower(emoji_pattern, '', f, flags=re.MULTILINE)
+            f = emoji_pattern.sub(r'', f)
             f = f.lower() #lowercase fragment
             f = re.sub(r'[.,"!~_:|?\']+', '', f,flags=re.MULTILINE) # Special characters
             f =  re.sub(r'\.\.\.', '', f,flags=re.MULTILINE) # 3 dots
