@@ -31,7 +31,7 @@ def new_centroid(matrix, members, indices):
         similarity = matrix[m][0]
         dist = list(map(lambda x: 1-x, similarity[0]))
         total_dist = sum(dist)
-        if total_dist < min_dist and m not in indices:
+        if total_dist < min_dist and (m not in indices):
             min_indx = m
             min_dist = total_dist
     return min_dist
@@ -65,7 +65,7 @@ def kmeans(X,n_clusters):
         print(indices_results)
         print(indices_results.count(indices))
 
-        if indices_results.count(indices) > 2:
+        if indices_results.count(indices) >= 2:
             break
         
         # calculate new centroids
@@ -82,6 +82,6 @@ def kmeans(X,n_clusters):
     
     return labels,indices
 
-res = kmeans(matrix_distance, 4)
+res = kmeans(matrix_distance, 6)
 print(res)
-np.savetxt("k4.csv", res[0], fmt='%i', delimiter=",")
+np.savetxt("k6.csv", res[0], fmt='%i', delimiter=",")
