@@ -84,4 +84,4 @@ def kmeans(X,n_clusters):
 
 res = kmeans(matrix_distance, 4)
 print(res)
-np.savetxt("k4.csv", res[0], delimiter=",")
+np.savetxt("k4.csv", res[0], fmt='%i', delimiter=",")

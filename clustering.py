@@ -3,6 +3,7 @@ from functools import reduce
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from csv_helper import CSVHelper
+import numpy as np
 import random
 
 def createMatrix():
@@ -62,9 +63,12 @@ def DBSCAN(matrix, epsilon, min_nodes):
     print("length of noise:", len(noise))
     #print("clusters " , clusters)
     # print("noise " , noise)
-    return({'clusters': len(clusters), 'noise': len(noise)})
-            
+    #return({'clusters': len(clusters), 'noise': len(noise)})
+    return(clusters)    
+
 # matrix = createMatrix()
-# DBSCAN(matrix, 0.4, 5)
+# res = DBSCAN(matrix, 0.6, 10)
+
+#np.savetxt("clust-e6-n10.csv", res, delimiter=",")
 
 
