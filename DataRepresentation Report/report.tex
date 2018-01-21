@@ -111,13 +111,21 @@
          
         \newpage         
         \section{ Cleaning of Tweets }
-One of the most crucial parts to start with and that has a big influence in the result of our project, is data processing step. A csv file containing 2000 tweets was provided.It was required to preprocess the data to make them good enough for the 'learning' step. 
+One of the most crucial parts to start with and that has a big influence in the result of our project, is data processing step. A csv file containing 2000 tweets was provided.It was required to preprocess the data to make them good enough for the 'learning' step.
         
         \subsection{Pre-Processing}
-        
-        
-        \section{Noise Removal}
 
+        We cleaned the data by applying several filters to them. We would like to mention that for this part, we have adapted the code that we already did before on Distributed Computing and Storage Architecture project. 
+         We removed the stop-words like determiners, the coordinating conjunctions and prepositions. Another pre-processing step that we did was trying to keep only the root of the words by applying stemming. In this way the clustering would be correctly implemented since it would be easier to cluster and find similarities beetween words that are the same. 
+         
+         Code screenshoot needs to be put..
+
+        \newpage
+        \section{Noise Removal}
+The data that we have in disposition, are tweets that are retrieved from people that just wrote their opinions or feelings without thinking to much on what they were writing. This means that in this dataset, the tweets contain noise and we will have to remove the noise from tweets. In order to do so, 2 implementations of different algorithms are requested, K-means and DBSCAN. 
+To implement the first algorithm, we will realize the need of having a consensus-matrix so that for each time that we run the same algorithm,we will count the number of times that two data points were clustered together. In this way, at the final table we would realise that if two data points are clustered together many times, it means that they are related a lot to each other and as a result they should be on the same cluster.
+
+Before running the K-means algorithm, we need to represent the text documents as mutually comparable vectors as it was requested. To do so, TF-IDF was used
 
         \section{Clustering}
 

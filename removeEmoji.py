@@ -17,3 +17,4 @@ print(emoji_pattern.sub(r'', text)) # no emoji
 
 
 #b=read.csv("example.csv"), row.names = FALSE)
+
