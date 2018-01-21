@@ -266,7 +266,7 @@ The other algorithm we needed to implement was DBSCAN. As we have already seen d
 radius $\epsilon$ and the minimum number of points required to form a dense region (minPts). Initially no point has been visited so we start randomly by one random point. What we do next in the algorithm is to retrieve the $\epsilon$-neighborhood of this point is and if it contains sufficiently many points, a cluster is started. If this is not the case, the point is labeled as noise. For the implementation of DBSCAN we decided to implement it by writing our own code but by having as a reference the code that was provided as well during the lab session. Similiar to what we did for K-Means, we runned the algorithms many times by changing $\epsilon$ value for each run but not only changing this value. We actually took in consideration to do an analyse when we changed the value of $\epsilon$ and keep constant the min number of points, when we changed the minimun number of points but we keep contant the $\epsilon$ and when we changed them both by giving random value. 
 
 
-CODE FOR DBSCAN
+CODE FOR DBSCANN
 \begin{lstlisting}[language=Python, caption= DBSCAN Algorithm, label={lst:DBSCAN implementation}]
 def DBSCAN(matrix, epsilon, min_nodes):
     print('epsilon', epsilon)
