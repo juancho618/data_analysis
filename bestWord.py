@@ -9,7 +9,7 @@ def tf(word, blob): # fuction to count te term frecuency.
 def n_containing(word, bloblist): # count the word ocurance in the document list.
     return sum(1 for blob in bloblist if word in blob)
 
-data = CSVHelper.load_csv("k8_results.csv")
+data = CSVHelper.load_csv("dbscan_results.csv")
 
 tweets = CSVHelper.load_csv("clean_tweets.csv")
 tweetOrdered = list(map(lambda x: x.split(','), tweets))
@@ -37,7 +37,7 @@ for x,cluster in enumerate(listDoc):
     resultWords.append({'cluster'+str(x): sorted_words[0][0]})
     print(sorted_words)
 
-print(resultWords[0])
-print(resultWords[1])
+print(resultWords)
+
 
         
