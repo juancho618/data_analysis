@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.13)  21 JAN 2018 14:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.13)  21 JAN 2018 15:20
 entering extended mode
 **./report.tex
 (report.tex
@@ -382,34 +382,44 @@ Overfull \hbox (43.5549pt too wide) in paragraph at lines 157--158
  []
 
 [3] [4] [5]
-Overfull \hbox (160.10529pt too wide) in paragraph at lines 214--215
+Overfull \hbox (160.10529pt too wide) in paragraph at lines 220--221
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmss on input line 240
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 246
 .
-LaTeX Font Info:    No file OMLcmss.fd. on input line 240.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 246.
 
 LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 240.
+(Font)              for symbol `textgreater' on input line 246.
 
+[6]
+Overfull \hbox (87.95505pt too wide) in paragraph at lines 288--289
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][] 
+ []
+
+[7]
 No file report.bbl.
-[6] [7] (report.aux)
+[8] (report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 5143 strings out of 493312
- 78483 string characters out of 3129391
+ 5170 strings out of 493312
+ 78857 string characters out of 3129391
  202340 words of memory out of 3000000
- 8613 multiletter control sequences out of 15000+200000
+ 8640 multiletter control sequences out of 15000+200000
  10563 words of font info for 41 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,42p,639b,1383s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,6n,42p,993b,1383s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmbx12.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmex10.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.
@@ -423,9 +433,9 @@ nts/cm/cmr12.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Redona/AppData/Local/Program
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Redona/AppData/
 Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on report.pdf (8 pages, 168563 bytes).
+Output written on report.pdf (9 pages, 175673 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
+ 79 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
