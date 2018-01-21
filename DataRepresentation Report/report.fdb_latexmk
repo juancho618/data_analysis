@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex report"] 1516572289 "report.aux" "report.bbl" "report" 1516572813
+["bibtex report"] 1516573164 "report.aux" "report.bbl" "report" 1516573165
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "report.aux" 1516572813 2671 3c3fbfe60be7799e8aa4996913b04d86 ""
+  "report.aux" 1516573165 2672 30628b089e9e1c15c6776e848396f18b ""
   "report.bcf" 0 -1 0 ""
   "report.bib" 1516571181 1050 b09b0867df1ea3259861d99a90614004 ""
   (generated)
-  "report.blg"
   "report.bbl"
-["pdflatex"] 1516572813 "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" "report.pdf" "report" 1516572813
+  "report.blg"
+["pdflatex"] 1516573164 "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" "report.pdf" "report" 1516573165
   "/etc/texmf/web2c/texmf.cnf" 1510763900 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" 1516572812 24443 1e2b5e16437c65f9f6d340f5df2d9b2d ""
+  "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" 1516573163 24453 19fc0279facddd88fb0da20b1c08af2f ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -100,12 +100,12 @@
   "img/kmeans_elbow.png" 1516553328 40027 2d63d72ec06c3d6560574730ef2179d5 ""
   "img/kmeantb.jpg" 1516572754 11966 bc93a642ae2d54204504e42aee1330a8 ""
   "img/vub.png" 1516471862 23480 0a4c0a7821a76c207497b16e39de35cf ""
-  "report.aux" 1516572813 2671 3c3fbfe60be7799e8aa4996913b04d86 ""
-  "report.bbl" 1516572289 487 b0f05d49b211d3bb4913ac41d4a24c9b "bibtex report"
-  "report.lof" 1516572813 632 e06eb71c074d256ad9cdb41a568fc2af ""
-  "report.tex" 1516572812 24443 1e2b5e16437c65f9f6d340f5df2d9b2d ""
+  "report.aux" 1516573165 2672 30628b089e9e1c15c6776e848396f18b ""
+  "report.bbl" 1516573164 487 b0f05d49b211d3bb4913ac41d4a24c9b "bibtex report"
+  "report.lof" 1516573165 632 389c3be915825cfc51f82d68f803b238 ""
+  "report.tex" 1516573163 24453 19fc0279facddd88fb0da20b1c08af2f ""
   (generated)
   "report.aux"
+  "report.log"
   "report.lof"
   "report.pdf"
-  "report.log"

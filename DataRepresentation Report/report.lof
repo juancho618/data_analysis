@@ -2,4 +2,4 @@
 \contentsline {figure}{\numberline {2}{\ignorespaces DBSCAN Number of cluster results for different Epsilon and minnodes values\relax }}{9}
 \contentsline {figure}{\numberline {3}{\ignorespaces Most frequent word by cluster for K-means and DBSCAN results\relax }}{10}
 \contentsline {figure}{\numberline {4}{\ignorespaces Results for K-means clustering after removing noise\relax }}{11}
-\contentsline {figure}{\numberline {5}{\ignorespaces Results for DBSCAN epsilon: 0.8 and minnodes: 10\relax }}{12}
+\contentsline {figure}{\numberline {5}{\ignorespaces Results for DBSCAN epsilon: 0.8 and minnodes: 10\relax }}{11}
