@@ -66,9 +66,15 @@ def DBSCAN(matrix, epsilon, min_nodes):
     #return({'clusters': len(clusters), 'noise': len(noise)})
     return(clusters)    
 
-# matrix = createMatrix()
-# res = DBSCAN(matrix, 0.6, 10)
+matrix = createMatrix()
+res = DBSCAN(matrix, 0.8, 10)
 
-#np.savetxt("clust-e6-n10.csv", res, delimiter=",")
+import csv
+
+with open("dbscan_results.csv", "w") as f:
+    writer = csv.writer(f)
+    writer.writerows(res)
+
+# np.savetxt("clust-e8-n10.csv", res, delimiter=",")
 
 

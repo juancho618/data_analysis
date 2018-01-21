@@ -30,5 +30,5 @@ def get_noise_list(matrix):
 
 res = get_noise_list(consensus)
 print(len(res))
-np.savetxt("noise.csv", res, fmt='%i',delimiter=",")
+#np.savetxt("noise.csv", res, fmt='%i',delimiter=",")
          
