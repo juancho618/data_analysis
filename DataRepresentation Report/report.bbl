@@ -1,0 +1,20 @@
+\begin{thebibliography}{1}
+
+\bibitem{tfidf}
+gitbooks, ``Tf-idf: Term frequency-inverse document,'' 2016.
+
+\bibitem{cosine}
+A.~Hadoop, ``hristian s. perone,'' 2017.
+
+\bibitem{dbscan}
+hiragnagpal, ``Asimple-dbscan,'' 2014.
+
+\bibitem{LabManual}
+N.~Deligiannis, D.~M. Nguyen, and T.~D. Huu, {\em Project Guidelines}.
+\newblock Vrije Univesiteit Brussel, 12 2017.
+
+\bibitem{ClassNotes}
+N.~Deligiannis, {\em Course Slides}.
+\newblock Vrije Univesiteit Brussel, 12 2017.
+
+\end{thebibliography}

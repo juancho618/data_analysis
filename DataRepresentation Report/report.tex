@@ -105,18 +105,22 @@
 
 
         \section{Introduction}
-   
+        Massive amounts of data are constantly harvested from diverse information sources in various domains, ranging from science and technology to business and telecommunications. Petabytes of high-dimensional data from multimodal imaging systems, social media, recommender systems, and large-scale research experiments, all require sophisticated solutions to information representation, dimensionality-reduction, and data analysis. 
+        
+        This project will show clearly the hidden values that stand behind data that at the first sight, look like they are not connected at all to each other. By doing the right Data cleaning, we will prove that from simple and messy data, you can extract helpful information regarding to what you want to do and the purpose why you need to do so. 
+        
+        In this project we were asked to do detailed analysis of the data in order to cluster them together by using K-Means and DBSCAN alogorithms. After running the algorithms in the pre-processed data, we also will visualize the results.
          
         \newpage         
         \section{ Cleaning of Tweets }
-One of the most crucial parts to start with and that has a big influence in the result of our project, is data processing step. A csv file containing 2000 tweets was provided.It was required to preprocess the data to make them good enough for the 'learning' step. Below we will provide more details regarding the way how we cleaned the data. 
+One of the most crucial parts to start with and that has a big influence in the result of our project, is data processing step. A csv file containing 2000 tweets was provided.It was required to pre-process the data to make them good enough for the 'learning' step. Below we will provide more details regarding the way how we cleaned the data. 
         
         \subsection{Pre-Processing}
 
         We cleaned the data by applying several filters to them. We would like to mention that for this part, we have adapted the code that we already did before on Distributed Computing and Storage Architecture project. 
         The first filtering process we did was tokenization. We chopped the data provided into small pieces so that after it would be easier to remove the stop-words like determiners, the coordinating conjunctions and prepositions.
-         Another pre-processing step that we did was trying to keep only the root of the words by applying stemming. In this way the clusters would be correctly implemented since it would be easier to cluster and find similarities beetween words that are the same. This is a very important part and that has a hight influence in the result. 
-         Something that we would like to emphasize is the fact that we did not remove the hashtags. We consider that they are a very helpful indicator when it comes to the properly group the similiar words together. Below is presented the code that shows the data-cleaning. 
+         Another pre-processing step that we did was trying to keep only the root of the words by applying stemming. In this way the clusters would be correctly implemented since it would be easier to cluster and find similarities between words that are the same. This is a very important part and that has a hight influence in the result. 
+         Something that we would like to emphasize is the fact that we did not remove the hashtags. We consider that they are a very helpful indicator when it comes to the properly group the similar words together. Below is presented the code that shows the data-cleaning. 
          
          
         \begin{lstlisting}[language=Python, caption= Python Cleaning Function, label={lst:dataCleaning}]
@@ -184,87 +188,190 @@ def tfidf(word, blob, bloblist):
     return tf(word, blob) * idf(word, bloblist)
            \end{lstlisting}
 
-After representing the tweets as mutually comparible vectors by using the TF-IDF implementation from scikit-learn, we were requested to use k-means and a consensus matrix for noise removal. As it was already mentioned, for the similarity metric we were allowed to choose either Euclidean distance or the Cosine distance. After some researches, we decided that it is better to use the cosine distance in our case. It was marked as more fast and efficient in comparison with the euclidian-distance and it was especially suggested when we have to deal with text data. Reference: https://cmry.github.io/notes/euclidean-v-cosine
+After representing the tweets as mutually comparable vectors by using the TF-IDF implementation from scikit-learn, we were requested to use k-means and a consensus matrix for noise removal. As it was already mentioned, for the similarity metric we were allowed to choose either Euclidean distance or the Cosine distance. After some researches, we decided that it is better to use the cosine distance in our case. It was marked as more fast and efficient in comparison with the euclidean-distance and it was especially suggested when we have to deal with text data. Reference: https://cmry.github.io/notes/euclidean-v-cosine
 We understood how the cosine distance works and after that we used the one that is already provided by scikit-learn. 
 
-After doing this step, we had to run the K-means algorithm. We used the code that was already provided to us but we did several modifications. We run the algorithm 9 times in order to construct our consensus matrix. For each time we run the algorithm, we will store on the consensus matrix, the number of times these nodes were matched together on the same cluster.
+\subsection{K means}
+
+Subsequently, we had to run the K-means algorithm. We used the code that was already provided to us but we did several modifications. We run the algorithm 9 times in order to construct our consensus matrix. For each time we run the algorithm, we will store on the consensus matrix, the number of times these nodes were matched together on the same cluster.
+
+CODE for the K-means algorithm:
+
+\begin{lstlisting}[language=Python, caption= K-Means Algorithm, label={lst:K-Means implementation}]
+    def kmeans(X,n_clusters):
+        # initialize labels and prev_labels. prev_labels will be compared with labels to check if the stopping condition
+        # have been reached.
+        prev_labels = np.zeros(X.shape[0])
+        labels = np.zeros(X.shape[0])
+        indices_results = []
+        # init random indices
+        indices = np.random.choice(X.shape[0], n_clusters, replace=False)
+        indices_results.append(indices)
+        # assign centroids using the indices
+        # centroids = X[indices]
+        
+        # the interative algorithm goes here
+        while (True):
+            # calculate the distances to the centroids
+            distances = get_distances(X, indices)
+            print(labels, indices)
+    
+            # assign labels
+            labels = assign_labels(distances, indices)
+            
+            # stopping condition
+            # if np.array_equal(labels, prev_labels):
+            #     break
+            print(indices_results)
+            print(indices_results.count(indices))
+    
+            if indices_results.count(indices) > 2:
+                break
+            
+            # calculate new centroids
+            for cluster_indx in range(len(indices)):
+                # members = X[labels == indices[cluster_indx]]
+                members = [ i  for i, x in enumerate(labels) if x == indices[cluster_indx]]
+                indices[cluster_indx] = new_centroid(X, members, indices)
+                #centroids[cluster_indx,:] = np.mean(members,axis=0)
+            indices_results.append(indices)
+            # keep the labels for next round's usage
+            # prev_labels = np.argmin(distances,axis=1)
+            #prev_labels = labels
+            indices_results.append(indices)
+        
+        return labels,indices
+        
+    \end{lstlisting}
 
 An important additional post-processing step that was requested, was that if a pair (i, j) of tweets did not cluster together more than 10 percent of the total number of runs, the position (i, j) in the consensus matrix is set to 0. So after we had the results of the consensus matrix, we replaced all the values '1' with '0' since we run the algorithm 11 times and approximately the value that we need to change to 0 was 1. 
-The main reason why the consensus matrix is helpful for us is to detect the noise. We initially implemented a threshold value by finding the average of all the entries in the constructed consensus matrix excluding the diagonals. After doing so, we found the average of each row and in case this average was less than the threshold value, we consider this as a noise point. In this way, we would have clusters with more cleaner tweets since we are going to remove all these noise points. On each time that we run the K-Means algorithmn, we will remove the points that were marked as noise from the consensus matrix. 
-In order to decide for the number of cluster, we decided to compute the sum of squered error (SSE). 
+The main reason why the consensus matrix is helpful for us is to detect the noise. We initially implemented a threshold value by finding the average of all the entries in the constructed consensus matrix excluding the diagonals. After doing so, we found the average of each row and in case this average was less than the threshold value, we consider this as a noise point. In this way, we would have clusters with more cleaner tweets since we are going to remove all these noise points. On each time that we run the K-Means algorithm, we will remove the points that were marked as noise from the consensus matrix. 
+In order to decide for the number of cluster, we decided to compute the sum of squared error (SSE). 
 
 SSE= $\sum\limits_{i=1}^K d(x,c_{i})^2 $
 
-After that we plotted k against the SSE, and we noticed that the error decreases as k gets larger and this was because when the number of clusters increases, they should be smaller, so distortion is also smaller. After visually checking the plot, we decided that this number started to normalize for K=NUMBERR
+In the figure \ref{fig:elbow} we plotted the results for different \textbf{K} values and the squared sum of the distance of the different centroids to its nodes in the clusters.
 
+\begin{figure}[H]
+    \begin{subfigure} {1\textwidth}  
+        \centering 
+        \includegraphics[width=1\linewidth]{./img/kmeans_elbow.png}
+    \end{subfigure}    
+    \caption{Elbow method for number of cluster vs cost function (SSE distance)}
+    \label{fig:elbow}
+\end{figure}
 
+As is clearly visible, by applying the Elbow method, we have decided to work with a number of cluster of \textbf{K=8}.
 
-
-
-The code that shows what is exlained above is presented in here: 
+The code that shows what is explained above is presented in here: 
 
 CODE OF NOISE REMOVAL
 
-
-
-CODE for the K-means algorithm
-
-
-
-Below is a table with the results: 
-
-TABLE WITH ITERATIONS
-
-\begin{lstlisting}[language=Python, caption= K-Means Algorithm, label={lst:K-Means implementation}]
-def kmeans(X,n_clusters):
-    # initialize labels and prev_labels. prev_labels will be compared with labels to check if the stopping condition
-    # have been reached.
-    prev_labels = np.zeros(X.shape[0])
-    labels = np.zeros(X.shape[0])
-    indices_results = []
-    # init random indices
-    indices = np.random.choice(X.shape[0], n_clusters, replace=False)
-    indices_results.append(indices)
-    # assign centroids using the indices
-    # centroids = X[indices]
+Before jumping to the application of k-means for 8 clusters, we have applied the consensus Matrix as a method of noise removal, to determine the tweets that do not fit properly in a cluster for different
+values of K (from 2 to 12). To do so, we have applied the code in the listing \ref{lst:Consensus implementation}. Additionally in the line 19, the pair of tweets that are pair less than a 10\% (less than one time) is not taken into account.
+\begin{lstlisting}[language=Python, caption= Consensus Algorithm, label={lst:Consensus implementation}]
+    import numpy as np
+    from csv_helper import CSVHelper
     
-    # the interative algorithm goes here
-    while (True):
-        # calculate the distances to the centroids
-        distances = get_distances(X, indices)
-        print(labels, indices)
-
-        # assign labels
-        labels = assign_labels(distances, indices)
-        
-        # stopping condition
-        # if np.array_equal(labels, prev_labels):
-        #     break
-        print(indices_results)
-        print(indices_results.count(indices))
-
-        if indices_results.count(indices) > 2:
-            break
-        
-        # calculate new centroids
-        for cluster_indx in range(len(indices)):
-            # members = X[labels == indices[cluster_indx]]
-            members = [ i  for i, x in enumerate(labels) if x == indices[cluster_indx]]
-            indices[cluster_indx] = new_centroid(X, members, indices)
-            #centroids[cluster_indx,:] = np.mean(members,axis=0)
-        indices_results.append(indices)
-        # keep the labels for next round's usage
-        # prev_labels = np.argmin(distances,axis=1)
-        #prev_labels = labels
-        indices_results.append(indices)
+    c_matrix = np.zeros((2001,2001), dtype=int)
+    print(c_matrix.shape)
     
-    return labels,indices
+    for i in range(11):
+        list_clasification = CSVHelper.load_csv("k"+str(i+2)+".csv")
+        for x, val1 in enumerate(list_clasification):
+            for y, val2 in enumerate(list_clasification):
+                if val1 == val2:
+                    c_matrix[x][y] += 1
     
-            \end{lstlisting}
+    print(c_matrix)
+    np.savetxt("conse.csv", c_matrix, fmt='%i',delimiter=",")
+
+    # Removing extra noise for tweets paired less than a 10%
+    consensus = np.loadtxt(open("conse.csv", "rb"), delimiter=",", skiprows=0)
+    consensus[consensus == 1] = 0
+\end{lstlisting}
+
+Once the Consensus Matrix is build, the next step is calculate the Noise tweet by comparing the tweets implication with the average total implications in the entire matrix by using the following code:
+
+\begin{lstlisting}[language=Python, caption= Consensus Noise, label={lst:Consensus_Noise}]
+consensus = np.loadtxt(open("conse.csv", "rb"), delimiter=",", skiprows=0)
+consensus[consensus == 1] = 0
+
+def get_average(matrix):
+    sum = 0
+    count = 0
+    for i in range(matrix.shape[0]):
+        for j in range(matrix.shape[0]):
+            if i != j:
+                sum += matrix[i][j]
+                count += 1
+    return (sum/count)
+            
+
+print(consensus[0,:])
+
+def get_noise_list(matrix):
+    noise_list=[]
+    for i in range(matrix.shape[0]):
+        row = consensus[i,:]
+        summatory = sum(row)
+        avg = (summatory - 11)/2000
+        if avg < 6.882:
+            noise_list.append(i)
+    return noise_list
+
+res = get_noise_list(consensus)
+\end{lstlisting}
+
+This results in the classification of \textit{848} tweets as noise. This tweets will be later removed from the clustered tweets for the \textbf{K=8} obtained previously
+by the elbow method.
+
+With the removal of the noise tweets in the previous cluster, it basically disapered six cluster, leaving the \textbf{K=8} into a \textbf{K=2}.
+
+\subsection{DBSCAN}
             
 The other algorithm we needed to implement was DBSCAN. As we have already seen during the lectures, DBSCAN requires two parameters: the
-radius $\epsilon$ and the minimum number of points required to form a dense region (minPts). Initially no point has been visited so we start randomly by one random point. What we do next in the algorithm is to retrieve the $\epsilon$-neighborhood of this point is and if it contains sufficiently many points, a cluster is started. If this is not the case, the point is labeled as noise. For the implementation of DBSCAN we decided to implement it by writing our own code but by having as a reference the code that was provided as well during the lab session. Similiar to what we did for K-Means, we runned the algorithms many times by changing $\epsilon$ value for each run but not only changing this value. We actually took in consideration to do an analyse when we changed the value of $\epsilon$ and keep constant the min number of points, when we changed the minimun number of points but we keep contant the $\epsilon$ and when we changed them both by giving random value. 
+radius $\epsilon$ and the minimum number of points required to form a dense region (minPts). Initially no point has been visited so we start 
+randomly by one point. What we do next in the algorithm is to retrieve the number of neighbor nodes within $\epsilon$ distance to later decide if the point 
+contains sufficiently points to be considered as a core node or if it noise.
 
+There is also a expand cluster method that will add nodes and another cluster that could be directly or indirectly reached by the cluster. For the implementation of DBSCAN we decided to do it by writing our 
+own code implementation, having as a reference the code that was provided during the lab session. Similarly to what we did for K-Means, we ran the algorithms many times by changing $\epsilon$ and the \textit{minPts} in four different scenarios presented in the figure \ref{fig:dbresults}. It 
+includes \textit{(a)} where $\epsilon$ is fixed to 0.5 and the  \textit{minPts} is incremented, a case \textit{(b)} incrementing $\epsilon$ and fixing \textit{minPts} to 5, the third case \textit{(c)} where $\epsilon$ is also incremented and \textit{minPts} is fixed to 5. Finally, a scenario \textit{(d)} where 
+both parameters are incremented.
+
+The intention behind this "scenarios" changing the parameters, is to somehow follow a Sensitivity Analysis for the expected output "number of clusters". Due to the fact that we could not find a direct or linear relation between the inputs ($\epsilon$ and \textit{minPts}) and the \textit{number of clusters}, we did a qualitative
+result among all the scenarios to choose the pair of inputs that provide a "fair" (balanced or middle point in between the option) with not more than a 40\% of nodes considered as noise.
+
+Following this logic, we found that a middle value that respected our previous conditions is when $\epsilon$ is 0.8 and \textit{minPts} is 10. This give us a total of \textbf{7} \textit{clusters} and \textbf{781} tweets considered as noise (less than 40\%).
+
+\begin{figure}[H]
+    \centering 
+    \begin{subfigure}{1\textwidth}  
+        \begin{subfigure}{.5\textwidth}
+            \centering   
+            \includegraphics[width=1\linewidth]{./img/e0-5n.png}
+            \caption{ }
+        \end{subfigure}
+        \begin{subfigure}{.5\textwidth}  
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/en5.png}
+            \caption{}
+        \end{subfigure}
+        \begin{subfigure}{.5\textwidth} 
+            \centering  
+            \includegraphics[width=1\linewidth]{./img/en10.png}
+            \caption{}
+        \end{subfigure}
+        \begin{subfigure}{.5\textwidth} 
+            \centering  
+            \includegraphics[width=1\linewidth]{./img/inc.png}
+            \caption{}
+        \end{subfigure}                
+    \end{subfigure}
+    \caption{DBSCAN Number of cluster results for different Epsilon and minnodes values}
+    \label{fig:dbresults}
+\end{figure}
 
 CODE FOR DBSCAN
 \begin{lstlisting}[language=Python, caption= DBSCAN Algorithm, label={lst:DBSCAN implementation}]
@@ -295,7 +402,7 @@ def DBSCAN(matrix, epsilon, min_nodes):
 
         \section{Clustering}
         
-Since now we have the final clustering for each dataset,we count for each cluster which is the most frequent word. To do so, we need to go through the words present in each tweets for a corresponding cluster and count how many times they are repeating and finding the one that is repetead more. The code below describes the procedure we followed. 
+Since now we have the final clustering for each dataset (DBSCAN and K-means), we count for each cluster which is the most frequent word. To do so, we need to go through the words present in each tweets for a corresponding cluster and count how many times they are repeating and finding the one that is repetead more. The code below describes the procedure we followed. 
 
 \begin{lstlisting}[language=Python, caption= Mostly used word/cluster, label={lst:Mostly used word/cluster}]
 resultWords = []
@@ -310,25 +417,65 @@ for x,cluster in enumerate(listDoc):
 print(resultWords)
  \end{lstlisting}
 
-        \section{Visualization}
+The results of the most frequent word in each cluster for each method is presented in the \ref{fig:table}.
+
+\begin{figure}[H]
+    \centering 
+    \begin{subfigure}{1\textwidth}  
+        \begin{subfigure}{.5\textwidth}
+            \centering   
+            \includegraphics[width=1\linewidth]{./img/kmeantb.jpg}
+            \caption{K-MEANS}
+        \end{subfigure}
+        \begin{subfigure}{.5\textwidth}  
+            \centering 
+            \includegraphics[width=1\linewidth]{./img/dbscantb.jpg}
+            \caption{DBSCAN}
+        \end{subfigure}                
+    \end{subfigure}
+    \caption{Most frequent word by cluster for K-means and DBSCAN results}
+    \label{fig:table}
+\end{figure}
+
+\section{Visualization}
         
-For both implementations,we have visualised the results. We have used the graphing software Gephi as suggested.
+For both implementations,we have visualized the results. We have used the graphing software Gephi as suggested.
 To create the graphs based on the results of the clustering, we imported the 2 csv files to each project, one with the node lists and one with the edges in between. 
 We repeated this step twice for the 2 different results that we got after running 
 K-means and DBSCAN.
 
 K-means Result image visualization
 
+\begin{figure}[H]
+    \begin{subfigure} {1\textwidth}  
+        \centering 
+        \includegraphics[width=0.8\linewidth]{./img/kmeans.jpeg}
+    \end{subfigure}    
+    \caption{Results for K-means clustering after removing noise}
+    \label{fig:movement}
+\end{figure}
+
 DBSCAN Result image Visualization
 
+\begin{figure}[H]
+    \begin{subfigure} {1\textwidth}  
+        \centering 
+        \includegraphics[width=0.8\linewidth]{./img/dbscan.jpeg}
+    \end{subfigure}    
+    \caption{Results for DBSCAN epsilon: 0.8 and minnodes: 10}
+    \label{fig:movement}
+\end{figure}
 
-    
-        \section{Conclusion}
+
+\newpage
+\section{Conclusion}
+The knowledge that we got at the end of this project, made us to have a real-life approach of how to do data representation, reduction and analysis. Even if we learned a lot of data cleaning techniques for our Distributing Computing and Storage Architecture project, in this project we expanded our knowledge more by learning more pre-processing techniques. 
+
+After having successfully understood the K-Means and DBSCAN algorithm, doing the implementation for the dataset that we had was not that easy. We faced many issues and difficulties that you experience only if you have a real-life scenario and this is also the reason why we have appreciated and learned so much from this.
 
 
-
-      
-    \bibliography{report}
-    \bibliographystyle{ieeetr}
-    \nocite{*}
+\newpage
+\bibliography{report}
+\bibliographystyle{ieeetr}
+\nocite{*}
 \end{document}

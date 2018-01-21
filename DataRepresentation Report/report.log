@@ -1,12 +1,16 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2017.11.13)  21 JAN 2018 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.15)  21 JAN 2018 23:07
 entering extended mode
-**./report.tex
-(report.tex
-LaTeX2e <2017-04-15>
-Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\article.cls"
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**"/home/juan/Documents/Data Representation/DataRepresentation Report/report.te
+x"
+(/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -21,12 +25,10 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amssymb.
-sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\amsfonts
-.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks14
 \symAMSa=\mathgroup4
@@ -34,76 +36,79 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.st
-y"
-Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/01/03 v1.1b Standard LaTeX Color (DPC)
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\colo
-r.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 147.
+Package color Info: Driver file: pdftex.def on input line 143.
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdft
-ex.def"
-File: pdftex.def 2017/06/24 v1.0g Graphics/color driver for pdftex
-)) ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.sty"
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.s
-ty"
+(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count87
+))
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks15
 )
-\lst@mode=\count87
+\lst@mode=\count88
 \lst@gtempboxa=\box26
 \lst@token=\toks16
-\lst@length=\count88
+\lst@length=\count89
 \lst@currlwidth=\dimen103
-\lst@column=\count89
-\lst@pos=\count90
+\lst@column=\count90
+\lst@pos=\count91
 \lst@lostspace=\dimen104
 \lst@width=\dimen105
-\lst@newlines=\count91
-\lst@lineno=\count92
+\lst@newlines=\count92
+\lst@lineno=\count93
 \lst@maxwidth=\dimen106
- ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
-\c@lstnumber=\count93
-\lst@skipnumbers=\count94
+\c@lstnumber=\count94
+\lst@skipnumbers=\count95
 \lst@framebox=\box27
 )
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx
-.sty"
-Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics
-.sty"
-Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty
-"
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\grap
-hics.cfg"
-File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 99.
+Package graphics Info: Driver file: pdftex.def on input line 95.
 )
 \Gin@req@height=\dimen107
 \Gin@req@width=\dimen108
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\caption\subcaption.sty"
-Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen109
 \captionmargin@=\dimen110
@@ -113,32 +118,29 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 \caption@parindent=\dimen114
 \caption@hangindent=\dimen115
 )
-\c@ContinuedFloat=\count95
+\c@ContinuedFloat=\count96
 Package caption Info: listings package is loaded.
 )
-\c@subfigure=\count96
-\c@subtable=\count97
+\c@subfigure=\count97
+\c@subtable=\count98
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
-.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.
-sty"
-Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifvtex
-.sty"
-Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex
-.sty"
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count98
-\Gm@cntv=\count99
-\c@Gm@tempcnt=\count100
+\Gm@cnth=\count99
+\Gm@cntv=\count100
+\c@Gm@tempcnt=\count101
 \Gm@bindingoffset=\dimen116
 \Gm@wd@mp=\dimen117
 \Gm@odd@mp=\dimen118
@@ -148,49 +150,53 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen122
 \Gm@layoutvoffset=\dimen123
 \Gm@dimlist=\toks17
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\geometry\geometry
-.cfg"))
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count101
+\c@float@type=\count102
 \float@exts=\toks18
 \float@box=\box28
 \@float@everytoks=\toks19
 \@floatcapt=\box29
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
+)
+(/usr/share/texlive/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\xspace.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count102
-\c@Blindtext=\count103
-\c@blind@countparstart=\count104
-\blind@countxx=\count105
-\blindtext@numBlindtext=\count106
-\blind@countyy=\count107
-\c@blindlist=\count108
-\c@blindlistlevel=\count109
-\c@blindlist@level=\count110
-\blind@listitem=\count111
-\c@blind@listcount=\count112
-\c@blind@levelcount=\count113
-\blind@mathformula=\count114
-\blind@Mathformula=\count115
-\c@blind@randomcount=\count116
-\c@blind@randommax=\count117
-\c@blind@pangramcount=\count118
-\c@blind@pangrammax=\count119
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\url\url.sty"
+\c@blindtext=\count103
+\c@Blindtext=\count104
+\c@blind@countparstart=\count105
+\blind@countxx=\count106
+\blindtext@numBlindtext=\count107
+\blind@countyy=\count108
+\c@blindlist=\count109
+\c@blindlistlevel=\count110
+\c@blindlist@level=\count111
+\blind@listitem=\count112
+\c@blind@listcount=\count113
+\c@blind@levelcount=\count114
+\blind@mathformula=\count115
+\blind@Mathformula=\count116
+\c@blind@randomcount=\count117
+\c@blind@randommax=\count118
+\c@blind@pangramcount=\count119
+\c@blind@pangrammax=\count120
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 Package color Info: Redefining color cyan on input line 31.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (report.aux)
+) (./report.aux
+
+LaTeX Warning: Label `fig:movement' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
@@ -205,80 +211,65 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
 LaTeX Font Info:    ... okay on input line 66.
-
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count120
+\scratchcounter=\count121
 \scratchdimen=\dimen124
 \scratchbox=\box30
-\nofMPsegments=\count121
-\nofMParguments=\count122
+\nofMPsegments=\count122
+\nofMParguments=\count123
 \everyMPshowfont=\toks20
-\MPscratchCnt=\count123
+\MPscratchCnt=\count124
 \MPscratchDim=\dimen125
-\MPnumerator=\count124
-\makeMPintoPDFobject=\count125
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
 \everyMPtoPDFconversion=\toks21
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf
--base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\infwar
-err.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+\c@lstlisting=\count127
+ (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.s
-ty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvdefi
-nekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ltxcmd
-s.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoption
-s.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\kvsetk
-eys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\etexcm
-ds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\ifluat
-ex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\pdftex
-cmds.sty"
-Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-\c@lstlisting=\count126
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
@@ -319,54 +310,52 @@ Package caption Info: End \AtBeginDocument code.
 
 <./img/vub.png, id=1, 542.025pt x 368.87813pt>
 File: ./img/vub.png Graphic file (type png)
-<use ./img/vub.png>
-Package pdftex.def Info: ./img/vub.png  used on input line 73. on input line 73
-.
-Package pdftex.def Info: Requested size: 241.84842pt x 164.59209pt on input lin
-e 73.
-[1
+ <use ./img/vub.png>
+Package pdftex.def Info: ./img/vub.png used on input line 73.
+(pdftex.def)             Requested size: 241.84842pt x 164.59209pt.
+ [1
 
-{C:/Users/Redona/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./img/vub.
-png>] (report.lof)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/vub.png>] (./report.
+lof
+LaTeX Font Info:    Try loading font information for U+msa on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 1.
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+))
 \tf@lof=\write3
 \openout3 = `report.lof'.
 
  [1] [2]
-LaTeX Font Info:    Try loading font information for U+msa on input line 130.
-
-("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Try loading font information for U+msb on input line 130.
- ("C:\Users\Redona\AppData\Local\Programs\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd
-"
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 130
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 134
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 130.
+LaTeX Font Info:    No file OMScmss.fd. on input line 134.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbar' on input line 130.
+(Font)              for symbol `textbar' on input line 134.
 
 
-Overfull \hbox (71.305pt too wide) in paragraph at lines 130--131
+Overfull \hbox (71.305pt too wide) in paragraph at lines 134--135
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (4.70477pt too wide) in paragraph at lines 150--151
+Overfull \hbox (4.70477pt too wide) in paragraph at lines 154--155
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (60.20496pt too wide) in paragraph at lines 153--154
+Overfull \hbox (60.20496pt too wide) in paragraph at lines 157--158
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -374,68 +363,147 @@ Overfull \hbox (60.20496pt too wide) in paragraph at lines 153--154
  []
 
 
-Overfull \hbox (43.5549pt too wide) in paragraph at lines 157--158
+Overfull \hbox (43.5549pt too wide) in paragraph at lines 161--162
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
-[3] [4] [5]
-Overfull \hbox (160.10529pt too wide) in paragraph at lines 220--221
+[3] [4]
+Overfull \hbox (182.30536pt too wide) in paragraph at lines 202--203
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-LaTeX Font Info:    Try loading font information for OML+cmss on input line 246
+[5]
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 228
 .
-LaTeX Font Info:    No file OMLcmss.fd. on input line 246.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 228.
+
 
 LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 246.
+(Font)              for symbol `textgreater' on input line 228.
 
-[6]
-Overfull \hbox (87.95505pt too wide) in paragraph at lines 288--289
+
+Overfull \hbox (21.35483pt too wide) in paragraph at lines 234--235
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+<./img/kmeans_elbow.png, id=30, 984.3174pt x 476.2593pt>
+File: ./img/kmeans_elbow.png Graphic file (type png)
+
+<use ./img/kmeans_elbow.png>
+Package pdftex.def Info: ./img/kmeans_elbow.png used on input line 258.
+(pdftex.def)             Requested size: 483.69684pt x 234.0304pt.
+ [6] [7 <./img/kmeans_elbow.png>]
+<./img/e0-5n.png, id=45, 984.3174pt x 476.2593pt>
+File: ./img/e0-5n.png Graphic file (type png)
+ <use ./img/e0-5n.png>
+Package pdftex.def Info: ./img/e0-5n.png used on input line 353.
+(pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
+
+<./img/en5.png, id=46, 984.3174pt x 476.2593pt>
+File: ./img/en5.png Graphic file (type png)
+ <use ./img/en5.png>
+Package pdftex.def Info: ./img/en5.png used on input line 358.
+(pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
+
+<./img/en10.png, id=47, 984.3174pt x 476.2593pt>
+File: ./img/en10.png Graphic file (type png)
+ <use ./img/en10.png>
+Package pdftex.def Info: ./img/en10.png used on input line 363.
+(pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
+
+<./img/inc.png, id=48, 984.3174pt x 476.2593pt>
+File: ./img/inc.png Graphic file (type png)
+ <use ./img/inc.png>
+Package pdftex.def Info: ./img/inc.png used on input line 368.
+(pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 351--371
+[]$[]$ $[]$
+ []
+
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 351--371
+[]$ $[]$ 
+ []
+
+[8]
+Overfull \hbox (87.95505pt too wide) in paragraph at lines 395--396
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
 
-[7]
-No file report.bbl.
-[8] (report.aux)
+[9 <./img/e0-5n.png> <./img/en5.png> <./img/en10.png> <./img/inc.png>]
+<./img/kmeantb.jpg, id=61, 271.76532pt x 122.70844pt>
+File: ./img/kmeantb.jpg Graphic file (type jpg)
+ <use ./img/kmeantb.jpg>
+Package pdftex.def Info: ./img/kmeantb.jpg used on input line 427.
+(pdftex.def)             Requested size: 241.84842pt x 109.20453pt.
+
+<./img/dbscantb.jpg, id=62, 338.01282pt x 317.68687pt>
+File: ./img/dbscantb.jpg Graphic file (type jpg)
+
+<use ./img/dbscantb.jpg>
+Package pdftex.def Info: ./img/dbscantb.jpg used on input line 432.
+(pdftex.def)             Requested size: 241.84842pt x 227.30919pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 425--435
+[]$[]$ $[]$ 
+ []
+
+<./img/kmeans.jpeg, id=63, 768.8725pt x 691.58376pt>
+File: ./img/kmeans.jpeg Graphic file (type jpg)
+ <use ./img/kmeans.jpeg>
+Package pdftex.def Info: ./img/kmeans.jpeg used on input line 452.
+(pdftex.def)             Requested size: 386.95894pt x 348.0704pt.
+
+[10 <./img/kmeantb.jpg> <./img/dbscantb.jpg>]
+<./img/dbscan.jpeg, id=67, 718.685pt x 647.41875pt>
+File: ./img/dbscan.jpeg Graphic file (type jpg)
+ <use ./img/dbscan.jpeg>
+Package pdftex.def Info: ./img/dbscan.jpeg used on input line 463.
+(pdftex.def)             Requested size: 386.95894pt x 348.59328pt.
+
+[11 <./img/kmeans.jpeg>] [12 <./img/dbscan.jpeg>] [13] (./report.bbl) [14]
+(./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5170 strings out of 493312
- 78857 string characters out of 3129391
- 202340 words of memory out of 3000000
- 8640 multiletter control sequences out of 15000+200000
- 10563 words of font info for 41 fonts, out of 3000000 for 9000
+ 5307 strings out of 493029
+ 79416 string characters out of 6136233
+ 208103 words of memory out of 5000000
+ 8751 multiletter control sequences out of 15000+600000
+ 11217 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 42i,6n,42p,993b,1383s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmbx12.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Redona/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Redona/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users
-/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmr12.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmr5.pfb><C:/Users/Redona/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Redona/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss9.pfb><C:/Users/Redona/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on report.pdf (9 pages, 175673 bytes).
+ 42i,10n,42p,705b,1554s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sha
+re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on report.pdf (15 pages, 626676 bytes).
 PDF statistics:
- 79 PDF objects out of 1000 (max. 8388607)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 
