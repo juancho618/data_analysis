@@ -189,7 +189,7 @@ We understood how the cosine distance works and after that we used the one that 
 
 After doing this step, we had to run the K-means algorithm. We used the code that was already provided to us but we did several modifications. We run the algorithm 9 times in order to construct our consensus matrix. For each time we run the algorithm, we will store on the consensus matrix, the number of times these nodes were matched together on the same cluster.
 
-An important additional post-processing step that was requested, was that if a pair (i, j) of tweets did not cluster together more than 10 percent of the total number of runs, the position (i, j) in the consensus matrix is set to 0. So after we had the results of the consensus matrix, we replaced all the values '1' with '0' since we run the algorithm 9 times and approximately the value that we need to change to 0 was 1. 
+An important additional post-processing step that was requested, was that if a pair (i, j) of tweets did not cluster together more than 10 percent of the total number of runs, the position (i, j) in the consensus matrix is set to 0. So after we had the results of the consensus matrix, we replaced all the values '1' with '0' since we run the algorithm 11 times and approximately the value that we need to change to 0 was 1. 
 The main reason why the consensus matrix is helpful for us is to detect the noise. We initially implemented a threshold value by finding the average of all the entries in the constructed consensus matrix excluding the diagonals. After doing so, we found the average of each row and in case this average was less than the threshold value, we consider this as a noise point. In this way, we would have clusters with more cleaner tweets since we are going to remove all these noise points. On each time that we run the K-Means algorithmn, we will remove the points that were marked as noise from the consensus matrix. 
 In order to decide for the number of cluster, we decided to compute the sum of squered error (SSE). 
 
@@ -208,6 +208,12 @@ CODE OF NOISE REMOVAL
 
 
 CODE for the K-means algorithm
+
+
+
+Below is a table with the results: 
+
+TABLE WITH ITERATIONS
 
 \begin{lstlisting}[language=Python, caption= K-Means Algorithm, label={lst:K-Means implementation}]
 def kmeans(X,n_clusters):
@@ -255,11 +261,66 @@ def kmeans(X,n_clusters):
     return labels,indices
     
             \end{lstlisting}
+            
+The other algorithm we needed to implement was DBSCAN. As we have already seen during the lectures, DBSCAN requires two parameters: the
+radius $\epsilon$ and the minimum number of points required to form a dense region (minPts). Initially no point has been visited so we start randomly by one random point. What we do next in the algorithm is to retrieve the $\epsilon$-neighborhood of this point is and if it contains sufficiently many points, a cluster is started. If this is not the case, the point is labeled as noise. For the implementation of DBSCAN we decided to implement it by writing our own code but by having as a reference the code that was provided as well during the lab session. Similiar to what we did for K-Means, we runned the algorithms many times by changing $\epsilon$ value for each run but not only changing this value. We actually took in consideration to do an analyse when we changed the value of $\epsilon$ and keep constant the min number of points, when we changed the minimun number of points but we keep contant the $\epsilon$ and when we changed them both by giving random value. 
+
+
+CODE FOR DBSCAN
+\begin{lstlisting}[language=Python, caption= DBSCAN Algorithm, label={lst:DBSCAN implementation}]
+def DBSCAN(matrix, epsilon, min_nodes):
+    print('epsilon', epsilon)
+    print('mnodes', min_nodes)
+    noise = []
+    visited = []
+    clusters = []
+    c_n = -1 #cluster number or position
+    for node in matrix:
+        if node[1] not in visited:
+            visited.append(node[1])
+            neighbour_nodes = regionScan(node[1], epsilon, matrix)
+            if len(neighbour_nodes) < min_nodes:
+                print('adding noise')
+                noise.append(node[1])
+            else:
+                clusters.append([])
+                c_n += 1
+                expandCluster(node, neighbour_nodes, clusters, c_n,epsilon, min_nodes, matrix, visited)
+    print("no. of clusters: " , len(clusters))
+    print("length of noise:", len(noise))
+    print("clusters " , clusters)
+    print("noise " , noise)
+            
+            \end{lstlisting}
 
         \section{Clustering}
+        
+Since now we have the final clustering for each dataset,we count for each cluster which is the most frequent word. To do so, we need to go through the words present in each tweets for a corresponding cluster and count how many times they are repeating and finding the one that is repetead more. The code below describes the procedure we followed. 
 
+\begin{lstlisting}[language=Python, caption= Mostly used word/cluster, label={lst:Mostly used word/cluster}]
+resultWords = []
+for x,cluster in enumerate(listDoc):
+    scores = {}
+    blobList = reduce(lambda x,y: x+y,cluster)
+    for i, blob in enumerate(cluster):
+        scores = {word: tf(word, blobList) for word in blob.words}
+        sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
+    resultWords.append({'cluster'+str(x): sorted_words[0][0]})
+    print(sorted_words)
+print(resultWords)
+ \end{lstlisting}
 
         \section{Visualization}
+        
+For both implementations,we have visualised the results. We have used the graphing software Gephi as suggested.
+To create the graphs based on the results of the clustering, we imported the 2 csv files to each project, one with the node lists and one with the edges in between. 
+We repeated this step twice for the 2 different results that we got after running 
+K-means and DBSCAN.
+
+K-means Result image visualization
+
+DBSCAN Result image Visualization
+
 
     
         \section{Conclusion}
