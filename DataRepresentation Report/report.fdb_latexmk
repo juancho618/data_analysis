@@ -1,15 +1,15 @@
 # Fdb version 3
-["bibtex report"] 1516572289 "report.aux" "report.bbl" "report" 1516572456
+["bibtex report"] 1516572289 "report.aux" "report.bbl" "report" 1516572813
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/ieeetr.bst" 1292289607 18361 1a00e58565e7f19bf2b3e1bfb82254ae ""
-  "report.aux" 1516572456 2671 3c3fbfe60be7799e8aa4996913b04d86 ""
+  "report.aux" 1516572813 2671 3c3fbfe60be7799e8aa4996913b04d86 ""
   "report.bcf" 0 -1 0 ""
   "report.bib" 1516571181 1050 b09b0867df1ea3259861d99a90614004 ""
   (generated)
-  "report.bbl"
   "report.blg"
-["pdflatex"] 1516572455 "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" "report.pdf" "report" 1516572456
+  "report.bbl"
+["pdflatex"] 1516572813 "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" "report.pdf" "report" 1516572813
   "/etc/texmf/web2c/texmf.cnf" 1510763900 1101 af7716885e081ab43982cab7b4672c1a ""
-  "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" 1516572455 24440 102c827f8022605f773b39bc784130f8 ""
+  "/home/juan/Documents/Data Representation/DataRepresentation Report/report.tex" 1516572812 24443 1e2b5e16437c65f9f6d340f5df2d9b2d ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex9.tfm" 1246382020 996 a18840b13b499c08ac2de96a99eda4bc ""
@@ -98,14 +98,14 @@
   "img/inc.png" 1516471862 46212 543fcdf01d1255b78607e4a3dfdcae8d ""
   "img/kmeans.jpeg" 1516565218 93572 ed6d2fe55f328088fbd82c2b409e3c81 ""
   "img/kmeans_elbow.png" 1516553328 40027 2d63d72ec06c3d6560574730ef2179d5 ""
-  "img/kmeantb.jpg" 1516572337 19871 6f6e3b53b3a27e52801536e8426e3e87 ""
+  "img/kmeantb.jpg" 1516572754 11966 bc93a642ae2d54204504e42aee1330a8 ""
   "img/vub.png" 1516471862 23480 0a4c0a7821a76c207497b16e39de35cf ""
-  "report.aux" 1516572456 2671 3c3fbfe60be7799e8aa4996913b04d86 ""
+  "report.aux" 1516572813 2671 3c3fbfe60be7799e8aa4996913b04d86 ""
   "report.bbl" 1516572289 487 b0f05d49b211d3bb4913ac41d4a24c9b "bibtex report"
-  "report.lof" 1516572456 632 e06eb71c074d256ad9cdb41a568fc2af ""
-  "report.tex" 1516572455 24440 102c827f8022605f773b39bc784130f8 ""
+  "report.lof" 1516572813 632 e06eb71c074d256ad9cdb41a568fc2af ""
+  "report.tex" 1516572812 24443 1e2b5e16437c65f9f6d340f5df2d9b2d ""
   (generated)
-  "report.lof"
   "report.aux"
+  "report.lof"
   "report.pdf"
   "report.log"
