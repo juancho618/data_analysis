@@ -9,7 +9,8 @@ documents = (
 "The sky is blue",
 "The sun is bright",
 "The sun in the sky is bright",
-"We can see the shining sun, the bright sun"
+"We can see the shining sun, the bright sun",
+"We can see the shining sku, the bright cloud"
 )
 
 
@@ -64,6 +65,8 @@ def expandCluster(node, neighbour_nodes, clusters, c_n, epsilon, MinPts, matrix,
 
 
 def DBSCAN(matrix, epsilon, min_nodes):
+    print('epsilon', epsilon)
+    print('mnodes', min_nodes)
     noise = []
     visited = []
     clusters = []
@@ -85,4 +88,4 @@ def DBSCAN(matrix, epsilon, min_nodes):
     print("noise " , noise)
             
 
-DBSCAN(matrix, 0.5, 2)
+DBSCAN(matrix, 0.4, 2)
