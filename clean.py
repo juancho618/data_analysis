@@ -6,10 +6,12 @@ import numpy
 from nltk.stem import WordNetLemmatizer
 from nltk.tokenize import TweetTokenizer
 from nltk.corpus import stopwords
-tknz = TweetTokenizer()
-tweets = CSVHelper.load_csv("Tweets_2016London.csv")
+tknz = TweetTokenizer()  #Tokenization
+tweets = CSVHelper.load_csv("Tweets_2016London.csv") #Load the provided CSV file
 clean_tweets = []
+#specify the format of the URL so we can remove it later
 url_expression = 'http[s]?[:]?//(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+#remove emojis
 emoji_pattern = re.compile("["
         u"\U0001F600-\U0001F64F"  # emoticons
         u"\U0001F300-\U0001F5FF"  # symbols & pictographs
@@ -35,15 +37,15 @@ for t in tweets:
             f = re.sub(r'RT @[a-z,A-Z]*: ', '', f, flags=re.MULTILINE) #Remove retweets
             f = wordnet_lemmatizer.lemmatize(f)
             if f:
-                clean_fragments.append(f)
-    clean_tweets.append(" ".join(clean_fragments))
+                clean_fragments.append(f) #we append the cleaned tweet to clean_fragment vector
+    clean_tweets.append(" ".join(clean_fragments)) #append the result to clean_tweets
 
 num = 326
 tweet = tweets[num]
 c_tweet =  clean_tweets[num]
 clean_array =  numpy.asarray(clean_tweets)
 
-# Export to csv
+# Export the cleaned tweets to a new csv file.Pandas Library is used
 import pandas as pd
 df = pd.DataFrame(clean_array)
 df.to_csv("file_path.csv")
