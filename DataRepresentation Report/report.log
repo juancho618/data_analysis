@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.15)  21 JAN 2018 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.11.15)  21 JAN 2018 23:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,31 +331,31 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout3 = `report.lof'.
 
  [1] [2]
-LaTeX Font Info:    Try loading font information for OMS+cmss on input line 134
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 133
 .
-LaTeX Font Info:    No file OMScmss.fd. on input line 134.
+LaTeX Font Info:    No file OMScmss.fd. on input line 133.
 
 
 LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbar' on input line 134.
+(Font)              for symbol `textbar' on input line 133.
 
 
-Overfull \hbox (71.305pt too wide) in paragraph at lines 134--135
+Overfull \hbox (71.305pt too wide) in paragraph at lines 133--134
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (4.70477pt too wide) in paragraph at lines 154--155
+Overfull \hbox (4.70477pt too wide) in paragraph at lines 152--153
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (60.20496pt too wide) in paragraph at lines 157--158
+Overfull \hbox (60.20496pt too wide) in paragraph at lines 155--156
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
@@ -363,114 +363,114 @@ Overfull \hbox (60.20496pt too wide) in paragraph at lines 157--158
  []
 
 
-Overfull \hbox (43.5549pt too wide) in paragraph at lines 161--162
+Overfull \hbox (43.5549pt too wide) in paragraph at lines 159--160
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][] 
  []
 
-[3] [4]
-Overfull \hbox (182.30536pt too wide) in paragraph at lines 202--203
+[3]
+Overfull \hbox (182.30536pt too wide) in paragraph at lines 200--201
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-[5]
-LaTeX Font Info:    Try loading font information for OML+cmss on input line 228
+[4]
+LaTeX Font Info:    Try loading font information for OML+cmss on input line 226
 .
-LaTeX Font Info:    No file OMLcmss.fd. on input line 228.
+LaTeX Font Info:    No file OMLcmss.fd. on input line 226.
 
 
 LaTeX Font Warning: Font shape `OML/cmss/m/n' undefined
 (Font)              using `OML/cmm/m/it' instead
-(Font)              for symbol `textgreater' on input line 228.
+(Font)              for symbol `textgreater' on input line 226.
 
 
-Overfull \hbox (21.35483pt too wide) in paragraph at lines 234--235
+Overfull \hbox (21.35483pt too wide) in paragraph at lines 232--233
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][] 
  []
 
-<./img/kmeans_elbow.png, id=30, 984.3174pt x 476.2593pt>
+<./img/kmeans_elbow.png, id=27, 984.3174pt x 476.2593pt>
 File: ./img/kmeans_elbow.png Graphic file (type png)
 
 <use ./img/kmeans_elbow.png>
-Package pdftex.def Info: ./img/kmeans_elbow.png used on input line 258.
+Package pdftex.def Info: ./img/kmeans_elbow.png used on input line 256.
 (pdftex.def)             Requested size: 483.69684pt x 234.0304pt.
- [6] [7 <./img/kmeans_elbow.png>]
-<./img/e0-5n.png, id=45, 984.3174pt x 476.2593pt>
+ [5] [6 <./img/kmeans_elbow.png>]
+<./img/e0-5n.png, id=42, 984.3174pt x 476.2593pt>
 File: ./img/e0-5n.png Graphic file (type png)
  <use ./img/e0-5n.png>
-Package pdftex.def Info: ./img/e0-5n.png used on input line 353.
+Package pdftex.def Info: ./img/e0-5n.png used on input line 351.
 (pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
 
-<./img/en5.png, id=46, 984.3174pt x 476.2593pt>
+<./img/en5.png, id=43, 984.3174pt x 476.2593pt>
 File: ./img/en5.png Graphic file (type png)
  <use ./img/en5.png>
-Package pdftex.def Info: ./img/en5.png used on input line 358.
+Package pdftex.def Info: ./img/en5.png used on input line 356.
 (pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
 
-<./img/en10.png, id=47, 984.3174pt x 476.2593pt>
+<./img/en10.png, id=44, 984.3174pt x 476.2593pt>
 File: ./img/en10.png Graphic file (type png)
  <use ./img/en10.png>
-Package pdftex.def Info: ./img/en10.png used on input line 363.
+Package pdftex.def Info: ./img/en10.png used on input line 361.
 (pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
 
-<./img/inc.png, id=48, 984.3174pt x 476.2593pt>
+<./img/inc.png, id=45, 984.3174pt x 476.2593pt>
 File: ./img/inc.png Graphic file (type png)
  <use ./img/inc.png>
-Package pdftex.def Info: ./img/inc.png used on input line 368.
+Package pdftex.def Info: ./img/inc.png used on input line 366.
 (pdftex.def)             Requested size: 241.84842pt x 117.0152pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 351--371
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 349--369
 []$[]$ $[]$
  []
 
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 351--371
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 349--369
 []$ $[]$ 
  []
 
-[8]
-Overfull \hbox (87.95505pt too wide) in paragraph at lines 395--396
+[7]
+Overfull \hbox (87.95505pt too wide) in paragraph at lines 393--394
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
  []
 
-[9 <./img/e0-5n.png> <./img/en5.png> <./img/en10.png> <./img/inc.png>]
-<./img/kmeantb.jpg, id=61, 362.35374pt x 423.5825pt>
+[8 <./img/e0-5n.png> <./img/en5.png> <./img/en10.png> <./img/inc.png>]
+<./img/kmeantb.jpg, id=58, 362.35374pt x 423.5825pt>
 File: ./img/kmeantb.jpg Graphic file (type jpg)
  <use ./img/kmeantb.jpg>
-Package pdftex.def Info: ./img/kmeantb.jpg used on input line 428.
+Package pdftex.def Info: ./img/kmeantb.jpg used on input line 426.
 (pdftex.def)             Requested size: 193.47946pt x 226.17812pt.
 
-<./img/dbscantb.jpg, id=62, 338.01282pt x 317.68687pt>
+<./img/dbscantb.jpg, id=59, 338.01282pt x 317.68687pt>
 File: ./img/dbscantb.jpg Graphic file (type jpg)
 
 <use ./img/dbscantb.jpg>
-Package pdftex.def Info: ./img/dbscantb.jpg used on input line 433.
+Package pdftex.def Info: ./img/dbscantb.jpg used on input line 431.
 (pdftex.def)             Requested size: 241.84842pt x 227.30919pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 426--436
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 424--434
 []$[]$ $[]$ 
  []
 
-[10 <./img/kmeantb.jpg> <./img/dbscantb.jpg>]
-<./img/kmeans.jpeg, id=66, 768.8725pt x 691.58376pt>
+[9 <./img/kmeantb.jpg> <./img/dbscantb.jpg>]
+<./img/kmeans.jpeg, id=63, 768.8725pt x 691.58376pt>
 File: ./img/kmeans.jpeg Graphic file (type jpg)
  <use ./img/kmeans.jpeg>
-Package pdftex.def Info: ./img/kmeans.jpeg used on input line 455.
+Package pdftex.def Info: ./img/kmeans.jpeg used on input line 453.
 (pdftex.def)             Requested size: 290.22105pt x 261.05281pt.
 
-<./img/dbscan.jpeg, id=67, 718.685pt x 647.41875pt>
+<./img/dbscan.jpeg, id=64, 718.685pt x 647.41875pt>
 File: ./img/dbscan.jpeg Graphic file (type jpg)
  <use ./img/dbscan.jpeg>
-Package pdftex.def Info: ./img/dbscan.jpeg used on input line 466.
+Package pdftex.def Info: ./img/dbscan.jpeg used on input line 464.
 (pdftex.def)             Requested size: 290.22105pt x 261.44249pt.
 
-[11 <./img/kmeans.jpeg> <./img/dbscan.jpeg>] [12] (./report.bbl) [13]
+[10 <./img/kmeans.jpeg> <./img/dbscan.jpeg>] [11] (./report.bbl) [12]
 (./report.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -482,7 +482,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5307 strings out of 493029
  79416 string characters out of 6136233
- 208103 words of memory out of 5000000
+ 206103 words of memory out of 5000000
  8751 multiletter control sequences out of 15000+600000
  11217 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -500,10 +500,10 @@ amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on report.pdf (14 pages, 618463 bytes).
+Output written on report.pdf (13 pages, 617977 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 120 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

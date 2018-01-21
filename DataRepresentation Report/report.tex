@@ -130,9 +130,7 @@ from nltk.corpus import stopwords
 tknz = TweetTokenizer()  #Tokenization
 tweets = CSVHelper.load_csv("Tweets_2016London.csv") #Load the provided CSV file
 clean_tweets = [] 
-#specify the format of the URL so we can remove it later
 url_expression = 'http[s]?[:]?//(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-#remove emojis
 emoji_pattern = re.compile("["
         u"\U0001F600-\U0001F64F"  # emoticons
         u"\U0001F300-\U0001F5FF"  # symbols & pictographs
