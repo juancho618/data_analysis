@@ -8,7 +8,7 @@ from csv_helper import CSVHelper
 # matrix = createMatrix()
 # result = DBSCAN(matrix, 0.6, 10)
 
-result = CSVHelper.load_csv("k8_results.csv")
+result = CSVHelper.load_csv("dbscan_results.csv")
 
 # noise_list = CSVHelper.load_csv("noise.csv")
 # noise_list = list(map(lambda x: int(x), noise_list)) 
@@ -23,5 +23,5 @@ def get_edges(result):
     return edges
 edges = get_edges(result)
 
-np.savetxt("edges_k8.csv", edges, fmt='%i',delimiter=",")
+np.savetxt("edges_dbscan.csv", edges, fmt='%i',delimiter=",")
 
