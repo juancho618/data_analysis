@@ -29,11 +29,13 @@ resultWords = []
 for x,cluster in enumerate(listDoc):
     scores = {}
     blobList = reduce(lambda x,y: x+y,cluster)
+    print(len(cluster))
     for i, blob in enumerate(cluster):
+        print(i)
         scores = {word: tf(word, blobList) for word in blob.words}
         sorted_words = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     resultWords.append({'cluster'+str(x): sorted_words[0][0]})
-    print(sorted_words[0][0])
+    print(sorted_words)
 
 print(resultWords[0])
 print(resultWords[1])
